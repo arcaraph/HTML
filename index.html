@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html</title>
+    <title>HTML&CSS</title>
+    <link rel="icon" href="../../images/aclogo.png">
+    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css">はCSSファイルを別のファイルとして書き写す接続コード-->
 </head>
+
 <body>
-    <!-- header -->
     <header id="back">
         <h1>山田太郎</h1>
         <ul>
@@ -16,15 +20,10 @@
             <li><a href="#form">問い合わせ</a></li>
         </ul>
     </header>
-    <!-- main -->
     <main>
-        <img src="img/kk_ears.jpg" alt="自分の写真" style="width: 100%;">
-        <!-- src="../../images/kk_ears.jpg"は画像のリンクを貼ります -->
-        <!-- alt="自分の写真"は写真が出なかった時に言葉が出る様になります -->
-        <!-- style="width: 100%;"はHTML上でCSSを書くときにこの様に書きます。(ちなみにこのコードは横幅を画面いっぱいで埋める設定です) -->
+        <img src="img/kk_ears.jpg" alt="自分の写真" class="main-image">
         <section>
-            <!-- sectionは大枠でコードを見やすくできます。更にarticleでその中の項目を更に分ける為 -->
-            <article>
+            <article class="pf">
                 <h1>ポートフォリオについて</h1>
                 <p>このポートフォリオのサイトは私のスキルと実績を皆さんに共有できるサイト制作をしました。<br>
                     <mark>HTMLとCSSの言語のみで作成できるサイトは自信があります。</mark><br>
@@ -32,7 +31,7 @@
                 </p>
             </article>
             <article id="about">
-                <h1>私について</h1>
+                <h1>私のについて</h1>
                 <p>私はエンジニアとして1年仕事をしています。<br>
                     今私はHTMLとCSSを学びJavaScriptを学習しようとしています。<br>
                     <mark>SEO対策とレイアウト調整、デザインの自信はあります</mark>。まだまだアプリで学習ですが共同作業できる様に知識をつけていきます。
@@ -44,7 +43,6 @@
                 </p>
                 <div>
                     <h2>HTML&CSS</h2>
-                    <!-- 下記のPタグは英語ですが何を書いたら良いかわからないが文字は適当に入れたい場合『lorem30』と書くと30文字の英文が作られる。 -->
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia eaque
                         mollitia eos molestias illo id vel assumenda.</p>
                     <img src="img/htmlcss.webp" style="width: 50%;">
@@ -80,16 +78,14 @@
             </article>
             <article id="achievements">
                 <h1>実績について</h1>
-                <p>私がこれまでについて作成したHPを紹介します。</p>
+                <p>私がこれまで作成したHPを紹介します。</p>
                 <div>
                     <h2>ポートフォリオ</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
                         ipsum
                         quisquam? Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
-                        nesciunt! Iste, optio.
-                    </p>
-                    <a href="https://code-jump.com/demo/html/profile/">ポートフォリオサイトを閲覧する</a>
-                    <!-- aタグにhref="https://code-jump.com/demo/html/profile/"を書けばいきたいページに飛べる -->
+                        nesciunt! Iste, optio.</p>
+                    <a class="link" href="https://code-jump.com/demo/html/profile/">ポートフォリオサイトを閲覧する</a>
                 </div>
                 <div>
                     <h2>ECサイト</h2>
@@ -98,7 +94,7 @@
                         quisquam? Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
                         nesciunt! Iste, optio.
                     </p>
-                        <a href="https://code-jump.com/demo/html/store2/">ショッピングサイトを閲覧する</a>
+                    <a class="link" href="https://code-jump.com/demo/html/store2/">ショッピングサイトを閲覧する</a>
                 </div>
                 <div>
                     <h2>スニーカサイト</h2>
@@ -107,23 +103,19 @@
                         quisquam? Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
                         nesciunt! Iste, optio.
                     </p>
-                        <a href="https://code-jump.com/demo/html/media/">スニーカー販売サイトを閲覧する</a>
+                    <a class="link" href="https://code-jump.com/demo/html/media/">スニーカー販売サイトを閲覧する</a>
                 </div>
             </article>
         </section>
     </main>
-    <!-- footer -->
     <footer id="form">
         <h2>お問い合わせFORM</h2>
         <small>全て埋めて送信ボタンを押して問い合わせください</small>
-        <!-- 一番小さい文字で作成するタグ -->
         <hr>
         <label>
             <p>名前</p>
             <input type="text" placeholder="フルネームで名前を書いて下さい">
         </label>
-        <!-- labelタグは中にある文字をクリックするとinputやtextareaにフォーカスされる-->
-         <!-- placeholderはユーザーに伝えるコメントで手助けをできる -->
         <label>
             <p>メールアドレス</p>
             <input type="text" placeholder="PCメールアドレスを書いて下さい">
@@ -134,9 +126,8 @@
         </label>
     </footer>
     <hr>
-    <a href="#back">TOPに戻る</a>
-    <!-- #と名前を書くと id属性の同じ名前のタグへ飛ぶ -->
-    <p>山田太郎の公式ホームページ@All company</p>
+    <a class="link" href="#back">TOPに戻る</a>
+    <p class="last-p">山田太郎の公式ホームページ@All company</p>
 </body>
 
 </html>
