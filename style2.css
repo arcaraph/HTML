@@ -13,8 +13,29 @@
 header {
     /* 背景色 */
     background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
+header ul{
+    display: flex;
+    width: 40%;
 
+}
+header li{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 3;
+
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
 /* main */
 /* id名なら #から / class名なら.から指定 */
 .main-image {
